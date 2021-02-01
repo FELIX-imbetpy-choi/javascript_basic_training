@@ -39,4 +39,4 @@ console.log(a == b); // true!  'Boolean’을 사용한 명시적 변환하여 �
 console.log( "-----4 equality operator-----" ); 
 console.log( 0 == false ); // true
 console.log( '' == false ); // true
-console.log( 0 === false ); // false, 피연산자의 형이 다르기 때문입니다.
+console.log( 0 === false ); // false, === 는 일치 연산자로 자료형 변환 없이 두 연산자가 같은지 판별한다.
