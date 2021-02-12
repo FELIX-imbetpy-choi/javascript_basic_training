@@ -117,10 +117,3 @@ outer: for (let i = 0; i < 3; i++) {
 break label; // 아래 for 문으로 점프할 수 없습니다.
 // label: for (...)
 
-
-
-
-
-
-
-
