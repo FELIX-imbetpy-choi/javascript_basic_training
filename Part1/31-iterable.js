@@ -11,7 +11,7 @@
 
 for (let char of "test") {
     // 글자 하나당 한 번 실행됩니다(4회 호출).
-    alert( char ); // t, e, s, t가 차례대로 출력됨
+    console.log( char ); // t, e, s, t가 차례대로 출력됨
 }
 
 
@@ -22,12 +22,12 @@ for (let char of "test") {
 // 반복을 시작했다가 잠시 멈춰 다른 작업을 하다가 다시 반복을 시작하는 것과 같이 반복 과정을 여러 개로 쪼개는 것이 가능합니다.
 let str = "Hello";
 // for..of를 사용한 것과 동일한 작업을 합니다.
-// for (let char of str) alert(char);
+// for (let char of str) console.log(char);
 let iterator = str[Symbol.iterator]();
 while (true) {
   let result = iterator.next();
   if (result.done) break;
-  alert(result.value); // 글자가 하나씩 출력됩니다.
+  console.log(result.value); // 글자가 하나씩 출력됩니다.
 }
 
 
